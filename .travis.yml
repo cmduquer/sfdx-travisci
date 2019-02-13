@@ -5,6 +5,7 @@ env:
 - URL=https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
 before_install:
 - echo "BEFORE INSTALL START"
+- gem update --system
 - gem install bundler
 - echo "BEFORE INSTALL END"
 - openssl aes-256-cbc -K $encrypted_9ac21c8fc1bd_key -iv $encrypted_9ac21c8fc1bd_iv
